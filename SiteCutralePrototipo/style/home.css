@@ -1,0 +1,189 @@
+.main-home-content {
+    padding-top: 0; /* Remove padding superior extra se o header já for fixo */
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('../assets/imgs/background.png') no-repeat center center/cover;
+    color: var(--white);
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 60px 0;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-section p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.info-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-light);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px var(--shadow-medium);
+}
+
+.card-icon {
+    font-size: 40px;
+    color: var(--primary-orange);
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 15px;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.card-prices .current-price {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--primary-orange);
+    margin: 10px 0 5px 0;
+}
+
+.card-prices .price-info,
+.card-prices .price-details {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-bottom: 5px;
+}
+
+.card-services button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.card-services button:last-child {
+    margin-bottom: 0;
+}
+
+.card-login-govbr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+.card-login-govbr .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+}
+.card-login-govbr .govbr-logo {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.card-login-govbr .btn-primary {
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .hero-section h1 {
+        font-size: 40px;
+    }
+    .hero-section p {
+        font-size: 18px;
+    }
+    .info-cards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste para telas médias */
+    }
+}
+
+/* No seu style.css */
+
+.card-thumbnail {
+    width: 80px; /* Ajuste o tamanho conforme desejar */
+    height: 80px;
+    border-radius: 50%; /* Para que a imagem fique redonda */
+    object-fit: cover; /* Garante que a imagem preencha o círculo */
+    margin-bottom: 20px; /* Espaço entre a imagem e o título */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Uma leve sombra */
+}
+
+/* Pode ser necessário ajustar o .card-icon também se você ainda for usá-lo em outros cards */
+.card-icon {
+    font-size: 40px;
+    color: var(--primary-orange);
+    margin-bottom: 20px;
+    /* Adicione display:flex e align-items:center se quiser centralizar o ícone */
+    display: flex;
+    justify-content: center;
+    width: 80px; /* Mesma largura do thumbnail para consistência */
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--bg-light); /* Fundo claro para o ícone */
+    align-items: center;
+}
+
+
+@media (max-width: 480px) {
+    .navbar nav ul li {
+        margin: 0 10px 10px 10px;
+    }
+
+    .hero-section h1 {
+        font-size: 28px;
+    }
+    .hero-section p {
+        font-size: 14px;
+    }
+    .hero-overlay {
+        padding: 40px 0;
+    }
+    .card {
+        padding: 20px;
+    }
+    .card-title {
+        font-size: 20px;
+    }
+    .card-description, .price-info, .price-details {
+        font-size: 14px;
+    }
+    .btn-primary, .btn-secondary, .btn-saiba-mais {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .card-prices .current-price {
+        font-size: 32px;
+    }
+}

@@ -1,0 +1,19 @@
+.inicio {
+    display: flex;
+    background: url('../assets/img/banner.png') no-repeat center center/cover;
+    height: 600px;
+    align-items: center;
+
+    color: #fff;
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-menu h1 {
+    font-size: 2rem;
+}

@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
     <title>Cutrale</title>
-</head>
-<body>
-    <header>
-        <img src="" alt="">
-        <h2>Cutrale</h2>
-        <nav>
+  </head>
+  <body>
+    <header class="container header">
+      <img class="header-logo" src="assets/img/logo.svg" alt="" />
 
-        </nav>
+      <button class="hamburger-menu" aria-label="Abrir Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+      <nav id="mainNavBar" class="nav-bar">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#institucional">Institucional</a></li>
+            <li><a href="#Sustentabilidade">Sustentabilidade</a></li>
+            <li><a href="#Unidades">Unidades</a></li>
+            <li><a href="#proteCitrus">ProteCitrus</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <a class="btn-login" href="#login">Login</a>
+        </ul>
+      </nav>
     </header>
-</body>
+
+    <section id="inicio"></section>
+
+    <script src="script/header.js"></script>
+  </body>
 </html>

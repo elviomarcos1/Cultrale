@@ -1,0 +1,9 @@
+:root {
+    --primary-orange: #FF6F00; /* Laranja da Cutrale */
+    --text-dark: #333333;
+    --text-light: #666666;
+    --bg-light: #f5f5f5;
+    --white: #ffffff;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.15);
+}
